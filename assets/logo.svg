@@ -1,17 +1,30 @@
 <svg width="1280" height="853" viewBox="0 0 1280 853" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Monograma PG en dorado</title>
-  <desc id="desc">Logotipo con las iniciales PG en dorado sobre fondo oscuro con el lema Innovation and Productivity</desc>
+  <title id="title">Logo original de Pablo García</title>
+  <desc id="desc">Logotipo dorado PG con icono de ventana y lema Innovation and Productivity sobre fondo oscuro.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0F1826"/>
-      <stop offset="100%" stop-color="#252F3F"/>
+      <stop offset="0%" stop-color="#0a0e18" />
+      <stop offset="35%" stop-color="#10182b" />
+      <stop offset="100%" stop-color="#1c2840" />
     </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4d473" />
+      <stop offset="50%" stop-color="#f0b93a" />
+      <stop offset="100%" stop-color="#d6921e" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
   </defs>
-  <rect width="1280" height="853" fill="url(#bg)" rx="32"/>
-  <rect x="230" y="218" width="165" height="148" rx="16" fill="none" stroke="#B78B4E" stroke-width="10"/>
-  <rect x="260" y="245" width="105" height="14" rx="7" fill="#B78B4E"/>
-  <path d="M296 309L317 332L296 355" stroke="#B78B4E" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M358 309L337 332L358 355" stroke="#B78B4E" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="460" y="365" fill="#B78B4E" font-family="'Poppins','Segoe UI','Helvetica Neue',sans-serif" font-size="320" font-weight="800" letter-spacing="6">PG</text>
-  <text x="455" y="470" fill="#B78B4E" font-family="'Poppins','Segoe UI','Helvetica Neue',sans-serif" font-size="22" letter-spacing="8" text-transform="uppercase">INNOVATION AND PRODUCTIVITY</text>
+  <rect width="1280" height="853" rx="36" fill="url(#bg)" />
+  <rect x="220" y="210" width="185" height="165" rx="20" fill="none" stroke="url(#gold)" stroke-width="12" filter="url(#glow)" />
+  <rect x="256" y="248" width="113" height="16" rx="8" fill="url(#gold)" />
+  <path d="M302 318L327 345L302 372" stroke="url(#gold)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M371 318L346 345L371 372" stroke="url(#gold)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="475" y="382" fill="url(#gold)" font-family="'Poppins','Segoe UI','Helvetica Neue',sans-serif" font-size="328" font-weight="800" letter-spacing="8" filter="url(#glow)">PG</text>
+  <text x="468" y="488" fill="url(#gold)" font-family="'Poppins','Segoe UI','Helvetica Neue',sans-serif" font-size="24" letter-spacing="10" text-transform="uppercase">INNOVATION AND PRODUCTIVITY</text>
 </svg>
