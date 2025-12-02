@@ -44,7 +44,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 2px;
-  padding: 8px 14px;
+  padding: 6px 10px;
   border: 1px solid var(--panel-strong);
   border-radius: 12px;
   background: var(--panel);
@@ -52,9 +52,11 @@ body {
 }
 
 .brand-img {
-  width: 32px;
-  height: 32px;
   display: block;
+  height: 38px;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -102,13 +104,11 @@ body {
 }
 
 .logo-mark {
-  width: 80px;
-  height: 80px;
-  padding: 10px;
+  width: min(200px, 40vw);
+  height: auto;
+  display: block;
   object-fit: contain;
   border-radius: 20px;
-  background: var(--panel);
-  border: 1px solid var(--panel-strong);
   box-shadow: var(--shadow);
   margin-bottom: 20px;
 }
